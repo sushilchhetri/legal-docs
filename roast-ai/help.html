@@ -3,79 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help & FAQ - Roast AI</title>
+    <title>Help &amp; Support - Roast AI</title>
     <style>
-        :root {
-            --bg-color: #0F0F13;
-            --card-bg: #1A1A24;
-            --text-primary: #FFFFFF;
-            --text-secondary: #A0A0B0;
-            --accent: #FFC107;
-            --border: #2A2A3A;
-        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: var(--text-primary);
-            background-color: var(--bg-color);
+            color: #222222;
+            background-color: #FFFFFF;
             max-width: 760px;
             margin: 0 auto;
             padding: 24px 16px;
         }
         h1 {
-            color: var(--text-primary);
-            border-bottom: 1px solid var(--border);
+            color: #111111;
+            border-bottom: 1px solid #EEEEEE;
             padding-bottom: 12px;
             font-size: 24px;
         }
         h2 {
-            color: var(--accent);
+            color: #111111;
             font-size: 18px;
             margin-top: 28px;
         }
         details {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 12px;
+            background: #F8F9FA;
+            border: 1px solid #E9ECEF;
+            border-radius: 8px;
             padding: 14px 16px;
             margin-bottom: 12px;
         }
         summary {
             font-weight: 600;
-            color: var(--text-primary);
+            color: #111111;
             cursor: pointer;
-            outline: none;
         }
         details p {
-            color: var(--text-secondary);
+            color: #495057;
             margin: 10px 0 0 0;
             font-size: 14px;
         }
+        .contact-card {
+            background: #F8F9FA;
+            border: 1px solid #E9ECEF;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 12px;
+        }
+        .contact-item {
+            margin: 8px 0;
+            font-size: 15px;
+        }
         a {
-            color: var(--accent);
+            color: #0066CC;
             text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <h1>Help &amp; Support</h1>
 
+    <h2>Frequently Asked Questions</h2>
+
     <details open>
         <summary>How does the AI Roast work?</summary>
-        <p>Our AI analyzes key visual elements in your uploaded photo—including expressions, outfit, grooming, and posture—to generate personalized comedy roasters based on your chosen persona.</p>
+        <p>Our vision model inspects visual cues in your image (facial expression, fashion, setting) and crafts customized roasts tailored to your selected persona.</p>
     </details>
 
     <details>
-        <summary>How do I get more tokens?</summary>
-        <p>You can unlock unlimited generations by subscribing to Roast Pro, or claim free bonus tokens by watching rewarded ads in the app.</p>
+        <summary>How do I unlock more credits / tokens?</summary>
+        <p>You can purchase Roast Pro for unlimited access or earn bonus free credits by watching short reward ads inside the app.</p>
     </details>
 
     <details>
-        <summary>Are my photos stored or shared?</summary>
-        <p>No. Images are processed in real-time solely to generate your roast output. We never store, sell, or train models on your uploaded personal photos.</p>
+        <summary>Are my uploaded photos stored or shared?</summary>
+        <p>No. Your photos are sent securely via HTTPS strictly for real-time analysis and are permanently discarded immediately after your roast is generated.</p>
     </details>
 
-    <h2>Need More Assistance?</h2>
-    <p style="color: var(--text-secondary);">Reach out to our support team at <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+    <h2>Need Direct Support?</h2>
+    <p>If you encounter billing issues, bugs, or have questions, reach out to our team:</p>
+
+    <div class="contact-card">
+        <div class="contact-item">
+            📧 <strong>Email Support:</strong> 
+            <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
+        </div>
+        <div class="contact-item">
+            📞 <strong>Phone / WhatsApp:</strong> 
+            <a href="tel:+919876543210">+91 98765 43210</a>
+        </div>
+        <div class="contact-item" style="color: #6c757d; font-size: 13px; margin-top: 8px;">
+            ⏰ Response Time: Monday – Friday (Within 24 Hours)
+        </div>
+    </div>
 </body>
 </html>
