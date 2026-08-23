@@ -3,34 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help &amp; FAQ - Roast AI</title>
+    <title>Help & FAQ - Roast AI</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #222; max-width: 760px; margin: 0 auto; padding: 24px 16px; }
-        h1, h2 { color: #111; }
-        h1 { border-bottom: 1px solid #eee; padding-bottom: 12px; }
-        details { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 14px; margin-bottom: 12px; }
-        summary { font-weight: 600; cursor: pointer; }
+        :root {
+            --bg-color: #0F0F13;
+            --card-bg: #1A1A24;
+            --text-primary: #FFFFFF;
+            --text-secondary: #A0A0B0;
+            --accent: #FFC107;
+            --border: #2A2A3A;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-color);
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 24px 16px;
+        }
+        h1 {
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 12px;
+            font-size: 24px;
+        }
+        h2 {
+            color: var(--accent);
+            font-size: 18px;
+            margin-top: 28px;
+        }
+        details {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin-bottom: 12px;
+        }
+        summary {
+            font-weight: 600;
+            color: var(--text-primary);
+            cursor: pointer;
+            outline: none;
+        }
+        details p {
+            color: var(--text-secondary);
+            margin: 10px 0 0 0;
+            font-size: 14px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <h1>Help &amp; Support</h1>
 
-    <details>
+    <details open>
         <summary>How does the AI Roast work?</summary>
-        <p>Our AI inspects visible elements in the photo (facial expression, fashion, vibe) and crafts custom comedy roasts based on your selected persona.</p>
+        <p>Our AI analyzes key visual elements in your uploaded photo—including expressions, outfit, grooming, and posture—to generate personalized comedy roasters based on your chosen persona.</p>
     </details>
 
     <details>
         <summary>How do I get more tokens?</summary>
-        <p>You can unlock unlimited generations with Roast Pro or earn bonus tokens by watching reward ads directly in the app.</p>
+        <p>You can unlock unlimited generations by subscribing to Roast Pro, or claim free bonus tokens by watching rewarded ads in the app.</p>
     </details>
 
     <details>
         <summary>Are my photos stored or shared?</summary>
-        <p>No. Photos are processed strictly in real-time to generate your roast and are not permanently saved on any servers.</p>
+        <p>No. Images are processed in real-time solely to generate your roast output. We never store, sell, or train models on your uploaded personal photos.</p>
     </details>
 
-    <h2>Need More Help?</h2>
-    <p>Reach out to our support team at <strong>support@yourdomain.com</strong>.</p>
+    <h2>Need More Assistance?</h2>
+    <p style="color: var(--text-secondary);">Reach out to our support team at <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
 </body>
 </html>
