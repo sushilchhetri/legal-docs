@@ -3,62 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - Roast AI</title>
+    <title>Terms of Service - RoastByAI</title>
     <style>
         :root {
-            --bg-color: #0F0F13;
+            --bg-color: #0F1015;
+            --card-bg: #181920;
             --text-primary: #FFFFFF;
-            --text-secondary: #A0A0B0;
-            --accent: #FFC107;
-            --border: #2A2A3A;
+            --text-secondary: #94A3B8;
+            --accent: #00E5FF;
+            --neon-purple: #C084FC;
+            --border: #282A36;
         }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: var(--text-primary);
             background-color: var(--bg-color);
-            max-width: 760px;
+            max-width: 720px;
             margin: 0 auto;
             padding: 24px 16px;
         }
+        header {
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
+        }
         h1 {
             color: var(--text-primary);
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 12px;
             font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        .last-updated {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 4px;
         }
         h2 {
             color: var(--accent);
-            font-size: 18px;
-            margin-top: 24px;
+            font-size: 17px;
+            font-weight: 700;
+            margin: 24px 0 10px 0;
         }
         p, li {
             color: var(--text-secondary);
             font-size: 14px;
+            line-height: 1.6;
+        }
+        p {
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+        li {
+            margin-bottom: 6px;
         }
         strong {
             color: var(--text-primary);
         }
+        .terms-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
         a {
             color: var(--accent);
             text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .tag {
+            background: rgba(121, 40, 202, 0.2);
+            color: var(--neon-purple);
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 12px;
+            color: #64748B;
         }
     </style>
 </head>
 <body>
-    <h1>Terms of Service</h1>
-    <p>Last updated: August 2026</p>
+    <header>
+        <h1>Terms of Service <span class="tag">RoastByAI</span></h1>
+        <p class="last-updated">Last Updated: August 2026</p>
+    </header>
 
-    <h2>1. Entertainment Purpose Only</h2>
-    <p>Roast AI creates parody, comedic responses using AI models. Outputs are purely satirical and must not be taken as factual statements or targeted personal harassment.</p>
+    <p>By downloading, accessing, or using <strong>RoastByAI</strong>, you agree to be bound by these Terms of Service. If you do not agree to these terms, please discontinue using the application.</p>
 
-    <h2>2. User Content & Prohibited Use</h2>
-    <p>You agree not to upload non-consensual images, explicit imagery, or hate speech. We reserve the right to restrict application access for violating these rules.</p>
+    <div class="terms-card">
+        <h2>1. Entertainment &amp; Satire Disclaimer</h2>
+        <p>RoastByAI is built exclusively for parody, humor, and comedic entertainment. AI-generated roasts, scores, and punchlines are automated satirical outputs. They do not represent factual statements, professional opinions, or personal evaluations.</p>
+    </div>
 
-    <h2>3. In-App Purchases & Subscriptions</h2>
-    <p>Subscriptions and token purchases are processed through Google Play Billing and follow standard Google Play refund and billing rules.</p>
+    <div class="terms-card">
+        <h2>2. User Conduct &amp; Content Guidelines</h2>
+        <p>You agree to use RoastByAI responsibly and must <strong>not</strong> upload:</p>
+        <ul>
+            <li>Non-consensual images of individuals without their explicit permission.</li>
+            <li>Content that promotes hate speech, targeted harassment, bullying, or violence.</li>
+            <li>Sexually explicit, pornographic, or unlawful material.</li>
+            <li>Photos containing personal identifying documents or sensitive personal records.</li>
+        </ul>
+        <p>We reserve the right to restrict or terminate app access for violations of these rules.</p>
+    </div>
 
-    <h2>4. Contact</h2>
-    <p>For inquiries, contact <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>.</p>
+    <div class="terms-card">
+        <h2>3. Subscriptions &amp; In-App Purchases</h2>
+        <p>Premium features and tokens are sold through <strong>Google Play In-App Billing</strong>. All billing, recurring auto-renewals, cancellations, and refunds are governed strictly by Google Play's Terms of Service and refund policies.</p>
+        <p>You can manage or cancel recurring subscriptions at any time via your Google Play account settings.</p>
+    </div>
+
+    <div class="terms-card">
+        <h2>4. Intellectual Property &amp; Generated Content</h2>
+        <p>You retain rights to the images you provide. The application design, branding, card templates, and software code are the intellectual property of RoastByAI.</p>
+    </div>
+
+    <div class="terms-card">
+        <h2>5. Limitation of Liability</h2>
+        <p>RoastByAI is provided on an "as is" and "as available" basis without warranties of any kind. We are not liable for any indirect, incidental, or consequential damages resulting from the use or inability to use the service.</p>
+    </div>
+
+    <div class="terms-card">
+        <h2>6. Contact Us</h2>
+        <p>For inquiries regarding these Terms of Service, contact:</p>
+        <p>📧 <strong>Email:</strong> <a href="mailto:sushilchhetri1402@gmail.com">sushilchhetri1402@gmail.com</a></p>
+    </div>
+
+    <footer>
+        &copy; RoastByAI. All rights reserved.
+    </footer>
 </body>
 </html>
