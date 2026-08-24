@@ -3,54 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Roast AI</title>
+    <title>About Us - RoastByAI</title>
     <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #222222;
-            background-color: #FFFFFF;
-            max-width: 760px;
+            color: #E2E8F0;
+            background-color: #0F1015;
+            max-width: 720px;
             margin: 0 auto;
             padding: 24px 16px;
         }
+        header {
+            margin-bottom: 24px;
+            border-bottom: 1px solid #282A36;
+            padding-bottom: 16px;
+        }
         h1 {
-            color: #111111;
-            border-bottom: 1px solid #EEEEEE;
-            padding-bottom: 12px;
+            color: #FFFFFF;
             font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        p.subtitle {
+            font-size: 13px;
+            color: #8E8EA0;
+            margin-top: 4px;
         }
         h2 {
-            color: #111111;
-            font-size: 18px;
-            margin-top: 24px;
+            color: #FFFFFF;
+            font-size: 17px;
+            font-weight: 700;
+            margin: 24px 0 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         p {
-            color: #444444;
-            font-size: 15px;
+            color: #94A3B8;
+            font-size: 14px;
+            margin-bottom: 12px;
         }
         .highlight-box {
-            background: #F8F9FA;
-            border-left: 4px solid #111111;
-            padding: 14px 16px;
+            background: #181920;
+            border-left: 4px solid #7928CA;
+            border-radius: 8px 12px 12px 8px;
+            padding: 16px;
+            margin: 18px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        }
+        .highlight-box p {
+            color: #E2E8F0;
+            margin: 0;
+            font-weight: 500;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
             margin: 16px 0;
-            border-radius: 4px;
+        }
+        .feature-card {
+            background: #181920;
+            border: 1px solid #282A36;
+            border-radius: 12px;
+            padding: 14px 16px;
+        }
+        .feature-card strong {
+            color: #00E5FF;
+            display: block;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+        .tag {
+            background: rgba(121, 40, 202, 0.2);
+            color: #C084FC;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #282A36;
+            text-align: center;
+            font-size: 12px;
+            color: #64748B;
         }
     </style>
 </head>
 <body>
-    <h1>About Us</h1>
+    <header>
+        <h1>About Us <span class="tag">RoastByAI</span></h1>
+        <p class="subtitle">Next-generation AI entertainment, comedic satire, and vision technology</p>
+    </header>
 
-    <p>Welcome to <strong>Roast AI</strong>, the next-generation AI-powered entertainment platform built to bring sharp wit, humor, and satire to your everyday photos.</p>
+    <p>Welcome to <strong>RoastByAI</strong>, an AI-powered comedy and entertainment studio built to bring sharp wit, viral humor, and personality roasts to everyday photos.</p>
 
     <div class="highlight-box">
-        <p style="margin: 0;"><strong>Our Mission:</strong> To create lighthearted, engaging, and personalized comedy experiences powered by state-of-the-art vision intelligence.</p>
+        <p>🎯 <strong>Our Mission:</strong> Deliver playful, high-energy satire and creative AI banter while adhering to responsible safety standards and strict user privacy.</p>
     </div>
 
-    <h2>Who We Are</h2>
-    <p>We are an independent app studio focused on developing high-performance, engaging mobile utilities and AI experiences. Roast AI combines advanced multimodal machine learning models with comedic persona engines to deliver instant punchlines, aura scores, and personality callouts.</p>
+    <h2>⚡ What Powers the Experience</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <strong>Multimodal Vision AI</strong>
+            <p style="margin: 0;">Analyzes expressions, styling, and visual vibes in real time to generate contextual punchlines.</p>
+        </div>
+        <div class="feature-card">
+            <strong>Curated Comedic Personas</strong>
+            <p style="margin: 0;">Tailored humor styles ranging from lighthearted tease (Mild) to savage corporate roasts (LinkedIn) and aura scores.</p>
+        </div>
+    </div>
 
-    <h2>Safe &amp; Responsible Entertainment</h2>
-    <p>We believe comedy should be fun and respectful. Our systems are tuned strictly for entertainment and satire. We treat user privacy with the utmost priority—your uploaded images are analyzed in real time and never retained, stored, or shared.</p>
+    <h2>🛡️ Safe &amp; Responsible Entertainment</h2>
+    <p>RoastByAI is created purely for laughs, banter, and entertainment among friends. Visual processing occurs on-demand via encrypted HTTPS, and images are never saved, tracked, or indexed permanently.</p>
+
+    <footer>
+        &copy; RoastByAI. All rights reserved.
+    </footer>
 </body>
 </html>
