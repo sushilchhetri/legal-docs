@@ -3,100 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help &amp; Support - Roast AI</title>
+    <title>Help &amp; Support - RoastByAI</title>
     <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #222222;
-            background-color: #FFFFFF;
-            max-width: 760px;
+            color: #E2E8F0;
+            background-color: #0F1015;
+            max-width: 720px;
             margin: 0 auto;
             padding: 24px 16px;
         }
+        header {
+            margin-bottom: 24px;
+            border-bottom: 1px solid #282A36;
+            padding-bottom: 16px;
+        }
         h1 {
-            color: #111111;
-            border-bottom: 1px solid #EEEEEE;
-            padding-bottom: 12px;
+            color: #FFFFFF;
             font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        p.subtitle {
+            font-size: 13px;
+            color: #8E8EA0;
+            margin-top: 4px;
         }
         h2 {
-            color: #111111;
-            font-size: 18px;
-            margin-top: 28px;
+            color: #FFFFFF;
+            font-size: 17px;
+            font-weight: 700;
+            margin: 28px 0 14px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         details {
-            background: #F8F9FA;
-            border: 1px solid #E9ECEF;
-            border-radius: 8px;
+            background: #181920;
+            border: 1px solid #282A36;
+            border-radius: 12px;
             padding: 14px 16px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
+            transition: border-color 0.2s ease;
+        }
+        details[open] {
+            border-color: #7928CA;
         }
         summary {
             font-weight: 600;
-            color: #111111;
+            color: #FFFFFF;
             cursor: pointer;
+            font-size: 15px;
+            outline: none;
+            user-select: none;
         }
         details p {
-            color: #495057;
+            color: #94A3B8;
             margin: 10px 0 0 0;
             font-size: 14px;
+            line-height: 1.5;
         }
         .contact-card {
-            background: #F8F9FA;
-            border: 1px solid #E9ECEF;
-            border-radius: 8px;
-            padding: 16px;
+            background: #181920;
+            border: 1px solid #282A36;
+            border-radius: 14px;
+            padding: 18px;
             margin-top: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
         .contact-item {
-            margin: 8px 0;
-            font-size: 15px;
+            margin: 10px 0;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #CBD5E1;
         }
         a {
-            color: #0066CC;
+            color: #00E5FF;
             text-decoration: none;
             font-weight: 500;
         }
         a:hover {
             text-decoration: underline;
         }
+        .support-hours {
+            color: #64748B;
+            font-size: 12px;
+            margin-top: 12px;
+            padding-top: 10px;
+            border-top: 1px solid #282A36;
+        }
+        .tag {
+            background: rgba(121, 40, 202, 0.2);
+            color: #C084FC;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
-    <h1>Help &amp; Support</h1>
+    <header>
+        <h1>Help &amp; Support <span class="tag">RoastByAI</span></h1>
+        <p class="subtitle">Frequently asked questions, billing support, and direct developer help</p>
+    </header>
 
-    <h2>Frequently Asked Questions</h2>
+    <h2>💡 Frequently Asked Questions</h2>
 
     <details open>
-        <summary>How does the AI Roast work?</summary>
-        <p>Our vision model inspects visual cues in your image (facial expression, fashion, setting) and crafts customized roasts tailored to your selected persona.</p>
+        <summary>How does the AI Roast analysis work?</summary>
+        <p>RoastByAI scans key visual elements (facial expressions, posture, outfit, and background) using Google's vision models to generate witty, humor-driven roasts matched to your chosen persona.</p>
     </details>
 
     <details>
-        <summary>How do I unlock more credits / tokens?</summary>
-        <p>You can purchase Roast Pro for unlimited access or earn bonus free credits by watching short reward ads inside the app.</p>
+        <summary>Are my uploaded photos stored on your servers?</summary>
+        <p>No. Your images are transmitted via secure HTTPS solely for instant AI inference. Images are never permanently saved, indexed, or shared with third parties, and are discarded immediately after processing.</p>
     </details>
 
     <details>
-        <summary>Are my uploaded photos stored or shared?</summary>
-        <p>No. Your photos are sent securely via HTTPS strictly for real-time analysis and are permanently discarded immediately after your roast is generated.</p>
+        <summary>How do I manage or cancel my PRO subscription?</summary>
+        <p>Subscriptions are securely managed through Google Play. To modify or cancel your plan: open the <strong>Google Play Store app</strong> &gt; tap your <strong>Profile Icon</strong> &gt; <strong>Payments &amp; subscriptions</strong> &gt; <strong>Subscriptions</strong> &gt; select <strong>RoastByAI</strong>.</p>
     </details>
 
-    <h2>Need Direct Support?</h2>
-    <p>If you encounter billing issues, bugs, or have questions, reach out to our team:</p>
+    <details>
+        <summary>I purchased PRO but my premium features didn't unlock.</summary>
+        <p>Make sure you are signed into the Google Play account used during checkout. Try reopening the app while connected to the internet—the app will automatically query and restore your active entitlement from Google Play.</p>
+    </details>
+
+    <details>
+        <summary>How do I earn free roasts?</summary>
+        <p>Free users receive daily tokens and can unlock extra bonus roasts by watching brief rewarded video ads directly within the app.</p>
+    </details>
+
+    <h2>📬 Need Direct Assistance?</h2>
+    <p style="color: #94A3B8; font-size: 14px;">If you have payment inquiries, bug reports, or feature requests, contact us directly:</p>
 
     <div class="contact-card">
         <div class="contact-item">
-            📧 <strong>Email Support:</strong> 
-            <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
+            <span>✉️</span>
+            <strong>Email:</strong>
+            <a href="mailto:sushilchhetri1402@gmail.com">sushilchhetri1402@gmail.com</a>
         </div>
         <div class="contact-item">
-            📞 <strong>Phone / WhatsApp:</strong> 
-            <a href="tel:+919876543210">+91 98765 43210</a>
+            <span>📞</span>
+            <strong>Phone / Support:</strong>
+            <a href="tel:+919876606894">+91 98766 06894</a>
         </div>
-        <div class="contact-item" style="color: #6c757d; font-size: 13px; margin-top: 8px;">
-            ⏰ Response Time: Monday – Friday (Within 24 Hours)
+        <div class="support-hours">
+            ⏰ Support Hours: Monday – Saturday (Response within 24–48 hours)
         </div>
     </div>
 </body>
