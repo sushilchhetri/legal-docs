@@ -8,8 +8,8 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #F8F9FA;
-            color: #212529;
+            background-color: #0F1015;
+            color: #F8F9FA;
             line-height: 1.5;
             padding: 24px 16px;
         }
@@ -24,35 +24,37 @@
         h1 {
             font-size: 22px;
             font-weight: 700;
-            color: #111;
+            color: #FFFFFF;
         }
         p.subtitle {
             font-size: 13px;
-            color: #6C757D;
+            color: #8E8EA0;
             margin-top: 4px;
         }
         .app-card {
-            background: #FFFFFF;
-            border: 1px solid #E9ECEF;
+            background: #181920;
+            border: 1px solid #282A36;
             border-radius: 16px;
             padding: 16px;
             margin-bottom: 14px;
             display: flex;
             align-items: center;
             gap: 16px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .app-card:hover {
+            border-color: #7928CA;
+            transform: translateY(-2px);
         }
         .app-icon {
             width: 64px;
             height: 64px;
             border-radius: 14px;
             object-fit: cover;
-            background: #E9ECEF;
+            background: #282A36;
             flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
+            display: block;
         }
         .app-info {
             flex-grow: 1;
@@ -60,23 +62,24 @@
         .app-title {
             font-size: 16px;
             font-weight: 600;
-            color: #111;
+            color: #FFFFFF;
         }
         .app-desc {
             font-size: 13px;
-            color: #6C757D;
+            color: #8E8EA0;
             margin-top: 2px;
             margin-bottom: 8px;
         }
         .btn-install {
             display: inline-block;
-            background-color: #01875F;
+            background: linear-gradient(90deg, #7928CA, #FF0080);
             color: #FFFFFF;
             font-size: 13px;
             font-weight: 600;
             text-decoration: none;
             padding: 6px 18px;
             border-radius: 20px;
+            transition: opacity 0.2s ease;
         }
         .btn-install:active {
             opacity: 0.85;
@@ -90,35 +93,66 @@
             <p class="subtitle">Explore our utilities and entertainment tools on Google Play</p>
         </header>
 
-        <!-- App 1: OnePik -->
+        <!-- App 1: RoastByAi -->
         <div class="app-card">
-            <div class="app-icon">📸</div>
+            <img class="app-icon" src="icons/roastbyai.png" alt="RoastByAi Icon" onerror="this.src='https://placehold.co/128x128/181920/FF0080?text=Roast+AI'">
             <div class="app-info">
-                <div class="app-title">OnePik</div>
-                <div class="app-desc">Smart photo curation and modern gallery utilities.</div>
-                <a class="btn-install" href="https://play.google.com/store/apps/details?id=com.onepik">Get App</a>
+                <div class="app-title">RoastByAi - AI Roast Generator</div>
+                <div class="app-desc">Savage photo roasts, aura scores, and AI humor.</div>
+                <a class="btn-install" href="https://play.google.com/store/apps/details?id=com.roastbyai.app&hl=en_IN" target="_blank">Get App</a>
             </div>
         </div>
 
-        <!-- App 2: Roast AI -->
+        <!-- App 2: NotiStoreX -->
         <div class="app-card">
-            <div class="app-icon">🔥</div>
+            <img class="app-icon" src="icons/notistorex.png" alt="NotiStoreX Icon" onerror="this.src='https://placehold.co/128x128/181920/00E5FF?text=NotiStoreX'">
             <div class="app-info">
-                <div class="app-title">Roast AI</div>
-                <div class="app-desc">Savage photo roasts, aura scores, and AI humor.</div>
-                <a class="btn-install" href="https://play.google.com/store/apps/details?id=com.roastbyai.app">Get App</a>
+                <div class="app-title">NotiStoreX: Notification Vault</div>
+                <div class="app-desc">Save, manage, and recover deleted notification logs seamlessly.</div>
+                <a class="btn-install" href="https://play.google.com/store/apps/details?id=com.notistorex.app&hl=en_IN" target="_blank">Get App</a>
             </div>
         </div>
 
         <!-- App 3: Galaxy Hotspot Chat -->
         <div class="app-card">
-            <div class="app-icon">💬</div>
+            <img class="app-icon" src="icons/galaxy_chat.png" alt="Galaxy Hotspot Chat Icon" onerror="this.src='https://placehold.co/128x128/181920/00E676?text=Hotspot+Chat'">
             <div class="app-info">
                 <div class="app-title">Galaxy Hotspot Chat</div>
-                <div class="app-desc">Connect and chat offline without internet over Wi-Fi hotspots.</div>
-                <a class="btn-install" href="https://play.google.com/store/apps/details?id=com.ConnectChat">Get App</a>
+                <div class="app-desc">Connect and chat offline without internet over local Wi-Fi hotspots.</div>
+                <a class="btn-install" href="https://play.google.com/store/apps/details?id=com.ConnectChat&hl=en_IN" target="_blank">Get App</a>
             </div>
         </div>
+
+        <!-- App 4: OnePik -->
+        <div class="app-card">
+            <img class="app-icon" src="icons/onepik.png" alt="OnePik Icon" onerror="this.src='https://placehold.co/128x128/181920/FFD600?text=OnePik'">
+            <div class="app-info">
+                <div class="app-title">OnePik</div>
+                <div class="app-desc">Smart photo curation and modern gallery utilities.</div>
+                <a class="btn-install" href="https://play.google.com/store/apps/details?id=com.onepik&hl=en_IN" target="_blank">Get App</a>
+            </div>
+        </div>
+
+        <!-- App 5: Fake Personality -->
+        <div class="app-card">
+            <img class="app-icon" src="icons/fake_personality.png" alt="Fake Personality Icon" onerror="this.src='https://placehold.co/128x128/181920/FF4081?text=Fake+Persona'">
+            <div class="app-info">
+                <div class="app-title">Fake Personality</div>
+                <div class="app-desc">Fun personality generator and entertainment identity test.</div>
+                <a class="btn-install" href="https://play.google.com/store/apps/details?id=com.sushilchhetri.fakepersonality&hl=en_IN" target="_blank">Get App</a>
+            </div>
+        </div>
+
+        <!-- App 6: Sound Express -->
+        <div class="app-card">
+            <img class="app-icon" src="icons/sound_express.png" alt="Sound Express Icon" onerror="this.src='https://placehold.co/128x128/181920/7C4DFF?text=Sound+Exp'">
+            <div class="app-info">
+                <div class="app-title">Sound Express</div>
+                <div class="app-desc">High-quality audio tools, sound effects, and playback controls.</div>
+                <a class="btn-install" href="https://play.google.com/store/apps/details?id=com.soundexpress&hl=en_IN" target="_blank">Get App</a>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
