@@ -3,69 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Roast AI</title>
+    <title>Privacy Policy - RoastByAI</title>
     <style>
         :root {
-            --bg-color: #0F0F13;
+            --bg-color: #0F1015;
+            --card-bg: #181920;
             --text-primary: #FFFFFF;
-            --text-secondary: #A0A0B0;
-            --accent: #FFC107;
-            --border: #2A2A3A;
+            --text-secondary: #94A3B8;
+            --accent: #00E5FF;
+            --neon-purple: #C084FC;
+            --border: #282A36;
         }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: var(--text-primary);
             background-color: var(--bg-color);
-            max-width: 760px;
+            max-width: 720px;
             margin: 0 auto;
             padding: 24px 16px;
         }
+        header {
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
+        }
         h1 {
             color: var(--text-primary);
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 12px;
             font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        .last-updated {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 4px;
         }
         h2 {
             color: var(--accent);
-            font-size: 18px;
-            margin-top: 24px;
+            font-size: 17px;
+            font-weight: 700;
+            margin: 24px 0 10px 0;
         }
         p, li {
             color: var(--text-secondary);
             font-size: 14px;
+            line-height: 1.6;
+        }
+        p {
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+        li {
+            margin-bottom: 6px;
         }
         strong {
             color: var(--text-primary);
         }
+        .policy-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
         a {
             color: var(--accent);
             text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .tag {
+            background: rgba(121, 40, 202, 0.2);
+            color: var(--neon-purple);
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 12px;
+            color: #64748B;
         }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p>Last updated: August 2026</p>
+    <header>
+        <h1>Privacy Policy <span class="tag">RoastByAI</span></h1>
+        <p class="last-updated">Effective Date: August 2026</p>
+    </header>
 
-    <p>Welcome to <strong>Roast AI</strong>. We value your privacy and are committed to maintaining transparent data processing practices.</p>
+    <p>Welcome to <strong>RoastByAI</strong>. Your privacy and data transparency are core priorities. This Privacy Policy details how we handle information when you use our mobile application.</p>
 
-    <h2>1. Information We Process</h2>
-    <p><strong>Images:</strong> Photos you provide are sent securely over HTTPS to generative AI APIs solely to construct your comedy roast. We do not permanently store or harvest your photos.</p>
-    <p><strong>Device Information:</strong> We may collect non-identifiable diagnostics and advertising identifiers (AdMob, Google Play Services) to serve ads, process subscriptions, and maintain stability.</p>
+    <div class="policy-card">
+        <h2>1. Information We Process</h2>
+        <p><strong>Image &amp; Photo Data:</strong> Images you capture or select are transmitted securely via encrypted HTTPS directly to Google Gemini vision AI endpoints strictly for real-time comedic analysis. <em>We do not store, harvest, sell, or permanently retain your photos on any server.</em> Images are deleted immediately after the roast response is generated.</p>
+        <p><strong>Device &amp; Advertising Identifiers:</strong> We collect non-personally identifiable diagnostic logs and Google Advertising ID (AAID) through Google Play Services to serve personalized ads, track crash analytics, and fulfill subscriptions.</p>
+    </div>
 
-    <h2>2. Third-Party Partners</h2>
-    <ul>
-        <li>Google Play In-App Billing</li>
-        <li>Google AdMob</li>
-        <li>Google Gemini AI</li>
-    </ul>
+    <div class="policy-card">
+        <h2>2. Third-Party Service Providers</h2>
+        <p>We partner with industry-standard third-party providers who process data in accordance with their respective privacy policies:</p>
+        <ul>
+            <li><strong>Google Gemini AI:</strong> Multimodal visual processing and text generation.</li>
+            <li><strong>Google AdMob:</strong> Serving banner, interstitial, and rewarded advertisements.</li>
+            <li><strong>Google Play In-App Billing:</strong> Processing digital subscriptions and in-app purchases.</li>
+            <li><strong>Firebase Analytics &amp; Crashlytics:</strong> Monitoring app performance and stability.</li>
+        </ul>
+    </div>
 
-    <h2>3. Security</h2>
-    <p>All network transmissions are strictly encrypted via TLS/HTTPS.</p>
+    <div class="policy-card">
+        <h2>3. Data Security &amp; Retention</h2>
+        <p>All network communications between the mobile application and AI processing endpoints are protected with industry-standard Transport Layer Security (TLS/HTTPS) encryption.</p>
+    </div>
 
-    <h2>4. Contact Us</h2>
-    <p>For questions or data privacy inquiries, contact <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>.</p>
+    <div class="policy-card">
+        <h2>4. Children\'s Privacy</h2>
+        <p>RoastByAI is intended for general audiences aged 13 and older (or 18+ depending on regional jurisdictions). We do not knowingly solicit or collect personal data from children under 13.</p>
+    </div>
+
+    <div class="policy-card">
+        <h2>5. Contact &amp; Inquiries</h2>
+        <p>For questions regarding this policy or data inquiries, reach us at:</p>
+        <p>📧 <strong>Developer Email:</strong> <a href="mailto:sushilchhetri1402@gmail.com">sushilchhetri1402@gmail.com</a></p>
+    </div>
+
+    <footer>
+        &copy; RoastByAI. All rights reserved.
+    </footer>
 </body>
 </html>
